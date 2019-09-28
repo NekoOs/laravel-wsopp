@@ -1,0 +1,31 @@
+{
+    "name": "nekoos/laravel-wsopp",
+    "description": "WSDL to Object PHP package generator by artisan",
+    "license": "MIT",
+    "keywords": ["Laravel commands","Artisan commands"],
+    "homepage": "https://github.com/nekoos/laravel-wsopp",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Neder Alfonso Fandiño Andrade",
+            "email": "neafand@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NekoOs\\": "src/NekoOs"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NekoOs\\Providers\\WsOppCommandServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4",
+        "phpunit/phpunit": "*"
+    }
+}
