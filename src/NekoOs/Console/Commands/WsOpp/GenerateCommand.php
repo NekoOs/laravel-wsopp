@@ -85,7 +85,7 @@ class GenerateCommand extends Command
         return [
             ['wsdl', null, InputOption::VALUE_REQUIRED, 'The definition contract.'],
             ['namespace', null, InputOption::VALUE_OPTIONAL, 'The namespace of generated objects.', null],
-            ['target', null, InputOption::VALUE_OPTIONAL, 'The target folder of generated objects.', 'app/Service/Soap'],
+            ['target', null, InputOption::VALUE_OPTIONAL, 'The target folder of generated objects.', 'app/Services/Soap'],
         ];
     }
 
