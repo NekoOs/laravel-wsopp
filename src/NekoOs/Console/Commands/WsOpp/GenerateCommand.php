@@ -39,7 +39,7 @@ class GenerateCommand extends Command
         if (file_exists($composer)) {
             $composer = json_decode(file_get_contents($composer));
         }
-        $key = array_search('app/', (array)data_get($composer, 'autoload.psr-4') ?? []);
+        $key = trim(array_search('app/', (array)data_get($composer, 'autoload.psr-4') ?? []), '\\');
 
         $path = $namespace;
         if (strpos($target, 'app/') === 0) {
